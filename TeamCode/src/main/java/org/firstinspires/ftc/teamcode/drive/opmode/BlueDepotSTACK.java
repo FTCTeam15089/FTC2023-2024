@@ -107,7 +107,7 @@ public class BlueDepotSTACK extends LinearOpMode {
             position = getPosition(myTfodRecognitions);
             telemetry.update();
         }
-        position=3;
+//        position=3;
         if(position == 1){
             left(drive,startPose);
         }else if(position == 2){
@@ -448,7 +448,7 @@ public class BlueDepotSTACK extends LinearOpMode {
         // First, create a TfodProcessor.Builder.
         myTfodProcessorBuilder = new TfodProcessor.Builder();
         // Set the name of the file where the model can be found.
-        myTfodProcessorBuilder.setModelFileName("model_20240124_182536.tflite");
+        myTfodProcessorBuilder.setModelFileName("model_20240127_181513.tflite");
         // Set the full ordered list of labels the model is trained to recognize.
         myTfodProcessorBuilder.setModelLabels(JavaUtil.createListWith("BlueCup"));
         // Set the aspect ratio for the images used when the model was created.
